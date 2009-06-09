@@ -1,0 +1,26 @@
+You should be able to set this project up using Maven2.
+
+My current stack:
+
+$> mvn -v
+Maven version: 2.0.9
+Java version: 1.6.0_07
+OS name: "mac os x" version: "10.5.7" arch: "x86_64" Family: "mac"
+
+
+1) Download the distributable for JMockit from:
+
+    https://jmockit.dev.java.net/files/documents/4599/136219/jmockit-0.98.zip
+
+2) Install it into your local repo by hand:
+
+$> mvn install:install-file -Dfile=<path/to/downloaded/jmockit.jar> -DgroupId=jmockit -DartifactId=jmockit -Dversion=0.98 -Dpackaging=jar
+
+3) Run the tests
+
+$> mvn test
+
+
+
+
+Contact Chris Wash with questions or feedback: http://cwash.org
